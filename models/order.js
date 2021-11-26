@@ -3,6 +3,10 @@ const mongoose = require("mongoose");
 
 const model = new mongoose.Schema(
   {
+    transactionId: {
+      type: String,
+      required: true
+    },
     productName: {
       type: String,
       required: true
