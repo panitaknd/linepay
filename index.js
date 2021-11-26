@@ -163,7 +163,7 @@ app.listen(port, async () => {
   console.log(`Server is running on port: ${port}`);
 
   mongoose.connect(
-    `mongodb://${process.env.MONGO_HOST}/linepay`,
+    `mongodb://${process.env.MONGO_HOST}/linepay.powercares`,
     { useNewUrlParser: true, useUnifiedTopology: true
         // , useCreateIndex: true 
     }
