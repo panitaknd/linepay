@@ -163,7 +163,7 @@ app.listen(port, async () => {
   console.log(`Server is running on port: ${port}`);
 
   mongoose.connect(
-    `mongodb://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@${process.env.MONGO_HOST}/linepay?retryWrites=true&w=majority`,
+    `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@${process.env.MONGO_HOST}/linepay?retryWrites=true&w=majority`,
     { useNewUrlParser: true, useUnifiedTopology: true
         // , useCreateIndex: true 
     }
