@@ -75,6 +75,7 @@ app.post("/api/payment/reservepayment", async (req, res, next) => {
       linePayResult.info
     ) {
       const order = new Order({
+        transactionId = linePayResult.info.transactionId,
         productName: productName,
         amount: amountToInt,
         orderId,
